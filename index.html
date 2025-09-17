@@ -8,30 +8,57 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
- <!-- Navbar -->
-<header class="bg-white shadow-md fixed top-0 w-full z-50">
-  <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <!-- Logo + Title -->
-    <a href="#" class="flex items-center gap-3 group">
+<!-- Navbar -->
+<header class="bg-white border-b fixed top-0 w-full z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
+    
+    <!-- Left: Logo + Title -->
+    <div class="flex items-center gap-2">
       <img 
-  src="logo.png" 
-  alt="Scalable Threads Logo" 
-  class="w-10 h-10 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
-/>
-      <h1 class="text-2xl font-bold text-indigo-600 transition-colors duration-300 group-hover:text-indigo-800">
-        Scalable Threads
-      </h1>
-    </a>
-    <!-- Navigation Links -->
-    <ul class="flex space-x-6 font-medium">
-      <li><a href="#hld" class="hover:text-indigo-600 transition">HLD</a></li>
-      <li><a href="#lld" class="hover:text-indigo-600 transition">LLD</a></li>
-      <li><a href="#resources" class="hover:text-indigo-600 transition">Resources</a></li>
-      <li><a href="#practice" class="hover:text-indigo-600 transition">Practice</a></li>
-      <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+        src="logo.png" 
+        alt="Scalable Threads Logo" 
+        class="w-10 h-10"
+      />
+      <span class="text-xl font-bold text-indigo-600">Scalable Threads</span>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="#hld" class="hover:text-indigo-600">HLD</a></li>
+      <li><a href="#lld" class="hover:text-indigo-600">LLD</a></li>
+      <li><a href="#resources" class="hover:text-indigo-600">Resources</a></li>
+      <li><a href="#practice" class="hover:text-indigo-600">Practice</a></li>
+      <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
     </ul>
+
+    <!-- Right: Search + Upgrade + Profile -->
+    <div class="flex items-center gap-4">
+      <!-- Search bar -->
+      <div class="relative hidden sm:block">
+        <input 
+          type="text" 
+          placeholder="Search" 
+          class="pl-8 pr-3 py-1.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+        />
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+             class="w-5 h-5 absolute left-2 top-2 text-gray-400">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+
+      <!-- Upgrade link -->
+      <a href="#" class="text-green-600 font-medium hover:underline">Upgrade</a>
+
+      <!-- Profile Circle -->
+      <div class="w-8 h-8 flex items-center justify-center bg-teal-500 text-white rounded-full font-semibold">
+        S
+      </div>
+    </div>
   </nav>
 </header>
+
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col justify-center items-center text-center px-6">
