@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Design Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-indigo-600">SystemDesign</h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#hld" class="hover:text-indigo-600">HLD</a></li>
+        <li><a href="#lld" class="hover:text-indigo-600">LLD</a></li>
+        <li><a href="#resources" class="hover:text-indigo-600">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Master System Design</h2>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl">
+      Learn <span class="text-indigo-600 font-semibold">High-Level Design (HLD)</span> and
+      <span class="text-indigo-600 font-semibold">Low-Level Design (LLD)</span> concepts with interactive examples and guides.
+    </p>
+    <a href="#hld" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-700 transition">
+      Start Learning
+    </a>
+  </section>
+
+  <!-- HLD Section -->
+  <section id="hld" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-8 text-center">High-Level Design (HLD)</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4">Architecture Diagrams</h4>
+        <p>Learn how to design scalable and fault-tolerant architectures.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4">Databases</h4>
+        <p>Understand SQL vs NoSQL, sharding, replication, and indexing strategies.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4">APIs & Scaling</h4>
+        <p>Design efficient APIs and handle load balancing for millions of users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLD Section -->
+  <section id="lld" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">Low-Level Design (LLD)</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">OOP Principles</h4>
+          <p>Deep dive into encapsulation, inheritance, polymorphism, and abstraction.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">Design Patterns</h4>
+          <p>Master Singleton, Factory, Observer, Strategy, and more patterns.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">Code Examples</h4>
+          <p>Explore practical examples in Java, Python, and other languages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-8 text-center">Resources</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <a href="#" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition block">
+        📘 System Design Primer (GitHub)
+      </a>
+      <a href="#" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition block">
+        🎥 YouTube Lectures & Playlists
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-10 text-center">
+    <p>© 2025 SystemDesignHub. Built for learners.</p>
+  </footer>
+
+  <!-- Scroll Reveal Animations -->
+  <script>
+    ScrollReveal().reveal('section', {
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200
+    });
+  </script>
+</body>
+</html>
