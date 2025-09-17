@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalable Threads | High-Level Design (HLD)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo + Title -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img 
+          src="logo.png" 
+          alt="Scalable Threads Logo" 
+          class="w-8 h-8 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+        />
+        <h1 class="text-2xl font-bold text-indigo-600 transition-colors duration-300 group-hover:text-indigo-800">
+          Scalable Threads
+        </h1>
+      </a>
+      <!-- Navigation Links -->
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="hld.html" class="text-indigo-600 font-semibold">HLD</a></li>
+        <li><a href="lld.html" class="hover:text-indigo-600 transition">LLD</a></li>
+        <li><a href="resources.html" class="hover:text-indigo-600 transition">Resources</a></li>
+        <li><a href="practice.html" class="hover:text-indigo-600 transition">Practice</a></li>
+        <li><a href="index.html#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HLD Content -->
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+    <h2 class="text-4xl font-bold mb-6 text-center">High-Level Design (HLD)</h2>
+    <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+      High-Level Design (HLD) provides a **bird’s eye view** of the system architecture. 
+      It focuses on system components, their interactions, technologies used, and how the 
+      system will scale and perform under load.
+    </p>
+
+    <!-- Core Concepts -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">System Components</h3>
+        <p>Identify major components like load balancers, API gateways, application servers, 
+        databases, caches, and message queues. Understand their responsibilities at a high level.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Scalability</h3>
+        <p>Design the system to handle growth in traffic and data volume. Consider horizontal 
+        scaling, replication, sharding, and CDN integration.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Fault Tolerance</h3>
+        <p>Plan for failures by introducing redundancy, failover mechanisms, and monitoring. 
+        Use multiple availability zones or regions to ensure high availability.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Security</h3>
+        <p>Ensure the design includes authentication, authorization, encryption, 
+        and protection against common attacks like DDoS and SQL injection.</p>
+      </div>
+    </div>
+
+    <!-- Example Case Studies -->
+    <h3 class="text-3xl font-bold mb-8 text-center">Case Studies</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Designing Twitter</h4>
+        <p>Explore how Twitter handles millions of tweets per second using 
+        distributed systems, sharding, and caching layers.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Designing YouTube</h4>
+        <p>Learn how YouTube manages video storage, streaming, 
+        and content delivery to a global audience at scale.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Designing Uber</h4>
+        <p>Understand the architecture behind real-time ride matching, 
+        location tracking, and dynamic pricing.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Scalable Threads. Built for learners.</p>
+  </footer>
+</body>
+</html>
