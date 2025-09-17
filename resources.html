@@ -1,11 +1,102 @@
-<section class="pt-32 max-w-6xl mx-auto px-6">
-  <h2 class="text-4xl font-bold mb-8 text-center">Resources</h2>
-  <div class="grid md:grid-cols-2 gap-8">
-    <a href="https://github.com/donnemartin/system-design-primer" target="_blank" class="p-6 bg-white rounded-xl shadow block hover:shadow-lg">
-      📘 System Design Primer
-    </a>
-    <a href="https://www.youtube.com/results?search_query=system+design" target="_blank" class="p-6 bg-white rounded-xl shadow block hover:shadow-lg">
-      🎥 YouTube Lectures
-    </a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalable Threads | Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo + Title -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img 
+          src="logo.png" 
+          alt="Scalable Threads Logo" 
+          class="w-8 h-8 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+        />
+        <h1 class="text-2xl font-bold text-indigo-600 transition-colors duration-300 group-hover:text-indigo-800">
+          Scalable Threads
+        </h1>
+      </a>
+      <!-- Navigation Links -->
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="hld.html" class="hover:text-indigo-600 transition">HLD</a></li>
+        <li><a href="lld.html" class="hover:text-indigo-600 transition">LLD</a></li>
+        <li><a href="resources.html" class="text-indigo-600 font-semibold">Resources</a></li>
+        <li><a href="practice.html" class="hover:text-indigo-600 transition">Practice</a></li>
+        <li><a href="index.html#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Resources Content -->
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+    <h2 class="text-4xl font-bold mb-6 text-center">Resources for System Design</h2>
+    <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+      Explore curated resources to enhance your understanding of system design, both high-level 
+      and low-level. These include articles, books, courses, and tools used by industry experts.
+    </p>
+
+    <!-- Core Resource Categories -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Books</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Designing Data-Intensive Applications – Martin Kleppmann</li>
+          <li>System Design Interview – Alex Xu</li>
+          <li>Site Reliability Engineering – Google SRE Team</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Online Courses</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Grokking the System Design Interview – Educative</li>
+          <li>System Design Primer – GitHub</li>
+          <li>Coursera: Cloud Computing & Distributed Systems</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Articles & Blogs</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>High Scalability – http://highscalability.com/</li>
+          <li>Uber Engineering Blog</li>
+          <li>Netflix Tech Blog</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-4">Tools & References</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Draw.io / Lucidchart – for architecture diagrams</li>
+          <li>Postman – API testing</li>
+          <li>JMeter / Locust – Load testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Recommended Learning Path -->
+    <h3 class="text-3xl font-bold mb-8 text-center">Recommended Learning Path</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Beginner</h4>
+        <p>Start with understanding basic system components, client-server architecture, and simple design patterns.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Intermediate</h4>
+        <p>Dive into distributed systems, caching, load balancing, and LLD concepts with practical examples.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-3">Advanced</h4>
+        <p>Focus on scaling large systems, fault-tolerance, CAP theorem, and building production-ready architectures.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Scalable Threads. Built for learners.</p>
+  </footer>
+</body>
+</html>
